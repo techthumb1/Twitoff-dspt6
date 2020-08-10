@@ -10,6 +10,8 @@ def list_books():
         {"id": 1, "title": "Book 1"},
         {"id": 2, "title": "Book 2"},
         {"id": 3, "title": "Book 3"},
+        {"id": 3, "title": "Book 4"},
+        {"id": 3, "title": "Book 5"},
     ]
     return jsonify(books)
 
@@ -19,6 +21,8 @@ def list_books_for_humans():
         {"id": 1, "title": "Book 1"},
         {"id": 2, "title": "Book 2"},
         {"id": 3, "title": "Book 3"},
+        {"id": 3, "title": "Book 4"},
+        {"id": 3, "title": "Book 5"},
     ]
     return render_template("books.html", message="Here's some books", books=books)
 
