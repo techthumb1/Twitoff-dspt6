@@ -6,7 +6,7 @@ from web_app.db_model import db, migrate
 from web_app.routes.home_routes import home_routes
 from web_app.routes.book_routes import book_routes
 
-DATABASE_URI = "sqlite:///web_app_99.db" # using relative filepath
+DATABASE_URI = "sqlite:///C:\\Users\\Aarons\\Desktop\\twitoff-dspt6\\web_app\\twitoff_development.db"
 
 def create_app():
     app = Flask(__name__)
