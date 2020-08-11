@@ -1,5 +1,5 @@
 
-# web_app/models.py
+# web_app/db_model.py
 
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
