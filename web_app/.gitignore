@@ -1,0 +1,4 @@
+# Ignore dev database
+
+migrations
+*.db
