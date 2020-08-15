@@ -5,10 +5,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TWITTER_API_KEY = os.getenv("mmpIITrs6V5wUEvOEvtl6tZrE")
-TWITTER_API_SECRET = os.getenv("blHXcQdMYjCaAVvgtLqG7W2VOo87uBHXuF2xpbho4lOts81BT3")
-TWITTER_ACCESS_TOKEN = os.getenv("3079411932-jCLGJWhKZ3MnaYOxhxASQjAFib2ziHnecu5wobi")
-TWITTER_ACCESS_TOKEN_SECRET = os.getenv("E3Krap22K0MTWZ1VBuJxBiPVHqgVg0ygYsUtuOvCuBuZ0")
+TWITTER_API_KEY = os.getenv("TWITTER_API_KEY")
+TWITTER_API_SECRET = os.getenv("TWITTER_API_SECRET")
+TWITTER_ACCESS_TOKEN = os.getenv("TWITTER_ACCESS_TOKEN")
+TWITTER_ACCESS_TOKEN_SECRET = os.getenv("TWITTER_ACCESS_TOKEN_SECRET")
 
 auth = tweepy.OAuthHandler(TWITTER_API_KEY, TWITTER_API_SECRET)
 auth.set_access_token(TWITTER_ACCESS_TOKEN, TWITTER_ACCESS_TOKEN_SECRET)
@@ -17,10 +17,13 @@ print("AUTH", type(auth))
 api = tweepy.API(auth)
 print("API CLIENT", type(api))
 
-user = api.get_user("techthumb1")
+user = api.get_user("techthumb")
 print(type(user))
 
 breakpoint()
+
+
+
 
 
 #def twitter_api():
